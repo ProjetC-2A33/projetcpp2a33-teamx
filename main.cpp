@@ -1,13 +1,34 @@
 #include "mainwindow.h"
-
 #include <QApplication>
+#include "connection.h"
 #include <QLocale>
 #include <QTranslator>
+#include <QMessageBox>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    // Connexion à la base
+    Connection c;
+    bool test = c.createconnect();
+
+    if(test) {
+        QMessageBox::information(nullptr, QObject::tr("Database is open"),
+                                 QObject::tr("Connection successful.\nClick Cancel to exit."),
+                                 QMessageBox::Cancel);
+    } else {
+        QMessageBox::critical(nullptr, QObject::tr("Database is not open"),
+                              QObject::tr("Connection failed.\nClick Cancel to exit."),
+                              QMessageBox::Cancel);
+        return -1;
+    }
+
+    // Créer et afficher la fenêtre principale
+    MainWindow w;
+    w.show();
+
+    // Gestion des traductions
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {
@@ -17,7 +38,6 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    MainWindow w;
-    w.show();
+
     return a.exec();
 }

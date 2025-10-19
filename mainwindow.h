@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QString>
+#include <QStringList>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -12,13 +15,14 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
-    QWidget* targetWidgetForBase(const QString &base); // renvoie la page cible pour un bouton de base
-    void setupConnections(); // configure toutes les connections automatiquement
+
+    QWidget* targetWidgetForBase(const QString &base);
+    void setupConnections();
 };
 
 #endif // MAINWINDOW_H

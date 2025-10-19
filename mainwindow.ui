@@ -6,25 +6,25 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1452</width>
-    <height>600</height>
+    <width>1458</width>
+    <height>732</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Gestion des Clients</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="centralWidget">
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>29</x>
-      <y>9</y>
+      <x>70</x>
+      <y>30</y>
       <width>1381</width>
       <height>541</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QFrame" name="frame1">
@@ -898,6 +898,7 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel {
+	background-color: rgb(0, 85, 127);
 	background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
@@ -982,6 +983,7 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel {
+	background-color: rgb(0, 85, 127);
 	background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
@@ -1344,6 +1346,16 @@ url(:/icons/icones/14.png)</string>
          <normaloff>:/icons/icones/upload.png</normaloff>:/icons/icones/upload.png</iconset>
        </property>
       </widget>
+      <zorder>pushButton_iconPromo</zorder>
+      <zorder>pushButton_iconCmd</zorder>
+      <zorder>pushButton_iconOut</zorder>
+      <zorder>label_8</zorder>
+      <zorder>label_9</zorder>
+      <zorder>groupBox_14</zorder>
+      <zorder>label_5</zorder>
+      <zorder>groupBox_31</zorder>
+      <zorder>acceuil_28</zorder>
+      <zorder>groupBox_36</zorder>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
@@ -1872,6 +1884,7 @@ QGroupBox::title {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel {
+	color: rgb(0, 85, 127);
 	background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
@@ -3833,7 +3846,7 @@ QHeaderView::section {
           <x>410</x>
           <y>80</y>
           <width>111</width>
-          <height>31</height>
+          <height>41</height>
          </rect>
         </property>
         <property name="minimumSize">
@@ -3855,7 +3868,7 @@ QHeaderView::section {
           <x>150</x>
           <y>80</y>
           <width>91</width>
-          <height>31</height>
+          <height>41</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -3881,7 +3894,7 @@ QHeaderView::section {
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>70</y>
+          <y>80</y>
           <width>91</width>
           <height>41</height>
          </rect>
@@ -3921,7 +3934,7 @@ url(:/icons/icones/14.png)</string>
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>70</y>
+          <y>80</y>
           <width>151</width>
           <height>41</height>
          </rect>
@@ -6151,7 +6164,7 @@ url(:/icons/icones/14.png)</string>
         <rect>
          <x>1140</x>
          <y>240</y>
-         <width>221</width>
+         <width>231</width>
          <height>51</height>
         </rect>
        </property>
@@ -6189,7 +6202,7 @@ url(:/icons/icones/14.png)</string>
       <widget class="QLabel" name="label_158">
        <property name="geometry">
         <rect>
-         <x>1370</x>
+         <x>1380</x>
          <y>240</y>
          <width>91</width>
          <height>41</height>
@@ -6972,88 +6985,6 @@ QGroupBox::title {
          <property name="title">
           <string>ajouter événement</string>
          </property>
-         <widget class="QLabel" name="label_138">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>50</y>
-            <width>181</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}</string>
-          </property>
-          <property name="text">
-           <string>id événement</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_139">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>100</y>
-            <width>181</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-	font: 6pt &quot;Segoe UI&quot;;
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}
-</string>
-          </property>
-          <property name="text">
-           <string>lieux d événement</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_140">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>150</y>
-            <width>171</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}</string>
-          </property>
-          <property name="text">
-           <string>date</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_141">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>240</y>
-            <width>181</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}</string>
-          </property>
-          <property name="text">
-           <string>Confidentialité</string>
-          </property>
-         </widget>
          <widget class="QLineEdit" name="lineEdit_44">
           <property name="geometry">
            <rect>
@@ -7163,26 +7094,6 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QLabel" name="label_142">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>200</y>
-            <width>181</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}</string>
-          </property>
-          <property name="text">
-           <string>Type d’événement</string>
-          </property>
-         </widget>
          <widget class="QLineEdit" name="l2_18">
           <property name="geometry">
            <rect>
@@ -7218,28 +7129,6 @@ QPushButton:hover {
 }
 
 </string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_143">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>320</y>
-            <width>171</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-	font: 6pt &quot;Segoe UI&quot;;
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}
-</string>
-          </property>
-          <property name="text">
-           <string>Responsable</string>
           </property>
          </widget>
          <widget class="QLineEdit" name="l2_19">
@@ -7279,33 +7168,11 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QLabel" name="label_144">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>370</y>
-            <width>171</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-	font: 6pt &quot;Segoe UI&quot;;
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}
-</string>
-          </property>
-          <property name="text">
-           <string>Capacité</string>
-          </property>
-         </widget>
          <widget class="QLineEdit" name="l2_20">
           <property name="geometry">
            <rect>
             <x>210</x>
-            <y>370</y>
+            <y>380</y>
             <width>141</width>
             <height>31</height>
            </rect>
@@ -7488,10 +7355,10 @@ QPushButton:hover {
          <widget class="QRadioButton" name="radioButton">
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>280</y>
+            <x>240</x>
+            <y>250</y>
             <width>81</width>
-            <height>24</height>
+            <height>20</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -7504,10 +7371,10 @@ QPushButton:hover {
          <widget class="QRadioButton" name="radioButton_2">
           <property name="geometry">
            <rect>
-            <x>130</x>
+            <x>240</x>
             <y>280</y>
             <width>81</width>
-            <height>21</height>
+            <height>20</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -7515,6 +7382,286 @@ QPushButton:hover {
           </property>
           <property name="text">
            <string>public</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_22">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>id événement</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_23">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>lieux d événement</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_24">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>date</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_25">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>200</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>Type d’événement</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_26">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>250</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>Confidentialité</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_27">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>310</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>Responsable</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_28">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>370</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>Capacité</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
           </property>
          </widget>
         </widget>
@@ -7568,9 +7715,9 @@ QPushButton:hover {
         <widget class="QPushButton" name="certificat_15">
          <property name="geometry">
           <rect>
-           <x>400</x>
+           <x>420</x>
            <y>50</y>
-           <width>131</width>
+           <width>111</width>
            <height>51</height>
           </rect>
          </property>
@@ -7765,31 +7912,11 @@ QGroupBox::title {
          <property name="title">
           <string>supprimer  événement</string>
          </property>
-         <widget class="QLabel" name="label_145">
-          <property name="geometry">
-           <rect>
-            <x>20</x>
-            <y>50</y>
-            <width>181</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel {
-    font-size: 20px;
-    font-weight: bold;
-    color: #002366;  /* Bleu foncé */
-}</string>
-          </property>
-          <property name="text">
-           <string>id événement</string>
-          </property>
-         </widget>
          <widget class="QLineEdit" name="lineEdit_45">
           <property name="geometry">
            <rect>
             <x>220</x>
-            <y>40</y>
+            <y>50</y>
             <width>131</width>
             <height>41</height>
            </rect>
@@ -7868,6 +7995,46 @@ QPushButton:hover {
             <width>20</width>
             <height>20</height>
            </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="certificat_29">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+          </property>
+          <property name="text">
+           <string>id événement</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
           </property>
          </widget>
         </widget>
@@ -8410,7 +8577,7 @@ QPushButton:hover {
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap>../../../Pictures/stat.png</pixmap>
+           <pixmap>../../stat.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -9185,6 +9352,7 @@ QGroupBox::title {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel {
+	background-color: rgb(0, 85, 127);
 	background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
@@ -9462,6 +9630,7 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel {
+	background-color: rgb(0, 85, 127);
 	background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
@@ -10161,18 +10330,27 @@ url(:/icons/icones/14.png)</string>
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1452</width>
+     <width>1458</width>
      <height>26</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
