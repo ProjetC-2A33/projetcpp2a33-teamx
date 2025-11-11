@@ -7,6 +7,7 @@
 QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT += printsupport
 
 TARGET = Atelier_Connexion
 TEMPLATE = app
@@ -28,11 +29,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    evenement.cpp \
+    planning.cpp
 
 HEADERS += \
         mainwindow.h \
-    connection.h
+    connection.h \
+    evenement.h \
+    planning.h
 
 FORMS += \
         mainwindow.ui

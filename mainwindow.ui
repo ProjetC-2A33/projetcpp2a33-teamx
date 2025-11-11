@@ -41,10 +41,7 @@
 border-radius: 35px;</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <widget class="QPushButton" name="pushButton_iconPromo">
        <property name="geometry">
@@ -1751,10 +1748,7 @@ QPushButton:hover {
 border-radius: 35px;</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <widget class="QPushButton" name="pushButton_iconPromo_2">
        <property name="geometry">
@@ -3343,10 +3337,7 @@ QPushButton:hover {
 border-radius: 35px;</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <widget class="QPushButton" name="pushButton_iconPromo_3">
        <property name="geometry">
@@ -4940,10 +4931,7 @@ url(:/icons/icones/14.png)</string>
 border-radius: 35px;</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <widget class="QPushButton" name="pushButton_iconPromo_4">
        <property name="geometry">
@@ -6844,10 +6832,7 @@ QPushButton:hover {
 border-radius: 35px;</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <widget class="QPushButton" name="pushButton_iconPromo_5">
        <property name="geometry">
@@ -6951,7 +6936,7 @@ image: url(:/resources/icone7.png);
         <attribute name="title">
          <string>ajouter\supprimer \modifier\afficher</string>
         </attribute>
-        <widget class="QGroupBox" name="groupBox_13">
+        <widget class="QGroupBox" name="groupBox_responsable">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -6985,7 +6970,7 @@ QGroupBox::title {
          <property name="title">
           <string>ajouter événement</string>
          </property>
-         <widget class="QLineEdit" name="lineEdit_44">
+         <widget class="QLineEdit" name="id_event">
           <property name="geometry">
            <rect>
             <x>220</x>
@@ -7021,7 +7006,7 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="l2_16">
+         <widget class="QLineEdit" name="lieux_event">
           <property name="geometry">
            <rect>
             <x>220</x>
@@ -7058,7 +7043,7 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QDateTimeEdit" name="dateTimeEdit_14">
+         <widget class="QDateTimeEdit" name="date_event">
           <property name="geometry">
            <rect>
             <x>220</x>
@@ -7094,7 +7079,7 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="l2_18">
+         <widget class="QLineEdit" name="type_event">
           <property name="geometry">
            <rect>
             <x>220</x>
@@ -7131,44 +7116,7 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="l2_19">
-          <property name="geometry">
-           <rect>
-            <x>210</x>
-            <y>320</y>
-            <width>141</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit, QDateTimeEdit {
-    font-family: &quot;Arial&quot;;
-    font-size: 14px;
-    color: white;
-    background-color: #0A0A2A;
-    border: 2px solid #1E1E5A;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-QPushButton {
-    font-family: &quot;Arial Black&quot;;
-    font-size: 14px;
-    color: white;
-    background-color: #0A0A2A;
-    border: 2px solid #1E1E5A;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-QPushButton:hover {
-    background-color: #1E1E5A;
-}
-
-</string>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="l2_20">
+         <widget class="QLineEdit" name="capacite">
           <property name="geometry">
            <rect>
             <x>210</x>
@@ -7205,7 +7153,7 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_139">
+         <widget class="QPushButton" name="ajout_event">
           <property name="geometry">
            <rect>
             <x>20</x>
@@ -7254,7 +7202,7 @@ QPushButton:hover {
            </size>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_140">
+         <widget class="QPushButton" name="modifier_event">
           <property name="geometry">
            <rect>
             <x>130</x>
@@ -7303,7 +7251,7 @@ QPushButton:hover {
            </size>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_141">
+         <widget class="QPushButton" name="anuler">
           <property name="geometry">
            <rect>
             <x>240</x>
@@ -7352,7 +7300,7 @@ QPushButton:hover {
            </size>
           </property>
          </widget>
-         <widget class="QRadioButton" name="radioButton">
+         <widget class="QRadioButton" name="confidentialit_prive">
           <property name="geometry">
            <rect>
             <x>240</x>
@@ -7368,7 +7316,7 @@ QPushButton:hover {
            <string>Privees</string>
           </property>
          </widget>
-         <widget class="QRadioButton" name="radioButton_2">
+         <widget class="QRadioButton" name="confidentialit_public">
           <property name="geometry">
            <rect>
             <x>240</x>
@@ -7664,8 +7612,79 @@ url(:/icons/icones/14.png)</string>
             <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
           </property>
          </widget>
+         <widget class="QComboBox" name="comboBox_responsable">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>320</y>
+            <width>141</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit, QDateTimeEdit {
+    font-family: &quot;Arial&quot;;
+    font-size: 14px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton {
+    font-family: &quot;Arial Black&quot;;
+    font-size: 14px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #1E1E5A;
+}
+
+/* 🔹 Nouveau style pour la ComboBox */
+QComboBox {
+    font-family: &quot;Arial&quot;;
+    font-size: 14px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Quand on ouvre la liste déroulante */
+QComboBox QAbstractItemView {
+    background-color: #0A0A2A;
+    color: white;
+    border: 2px solid #1E1E5A;
+    selection-background-color: #1E1E5A;  /* couleur de sélection */
+}
+
+/* Bouton déroulant de la ComboBox (la flèche) */
+QComboBox::drop-down {
+    border: none;
+    background-color: #1E1E5A;
+    width: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Flèche blanche pour le menu déroulant */
+QComboBox::down-arrow {
+    image: url(:/icons/down-arrow-white.png); /* optionnel — remplace par ton icône si tu veux */
+    width: 12px;
+    height: 12px;
+}
+</string>
+          </property>
+         </widget>
         </widget>
-        <widget class="QTableWidget" name="tableWidget_13">
+        <widget class="QTableWidget" name="table_event">
          <property name="geometry">
           <rect>
            <x>400</x>
@@ -7698,12 +7717,17 @@ url(:/icons/icones/14.png)</string>
          </column>
          <column>
           <property name="text">
-           <string>responsable</string>
+           <string>type</string>
           </property>
          </column>
          <column>
           <property name="text">
            <string>confidentialite</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>responsable</string>
           </property>
          </column>
          <column>
@@ -7715,8 +7739,8 @@ url(:/icons/icones/14.png)</string>
         <widget class="QPushButton" name="certificat_15">
          <property name="geometry">
           <rect>
-           <x>420</x>
-           <y>50</y>
+           <x>410</x>
+           <y>10</y>
            <width>111</width>
            <height>51</height>
           </rect>
@@ -7755,8 +7779,8 @@ url(:/icons/icones/14.png)</string>
         <widget class="QPushButton" name="certificat_9">
          <property name="geometry">
           <rect>
-           <x>550</x>
-           <y>50</y>
+           <x>530</x>
+           <y>10</y>
            <width>61</width>
            <height>41</height>
           </rect>
@@ -7795,8 +7819,8 @@ url(:/icons/icones/14.png)</string>
         <widget class="QComboBox" name="comboBox_6">
          <property name="geometry">
           <rect>
-           <x>630</x>
-           <y>50</y>
+           <x>600</x>
+           <y>10</y>
            <width>91</width>
            <height>41</height>
           </rect>
@@ -7818,9 +7842,9 @@ url(:/icons/icones/14.png)</string>
         <widget class="QPushButton" name="certificat_10">
          <property name="geometry">
           <rect>
-           <x>730</x>
-           <y>50</y>
-           <width>151</width>
+           <x>830</x>
+           <y>10</y>
+           <width>171</width>
            <height>41</height>
           </rect>
          </property>
@@ -7848,35 +7872,12 @@ QPushButton:pressed {
 url(:/icons/icones/14.png)</string>
          </property>
          <property name="text">
-          <string>recherche par ID </string>
+          <string>recherche par nom </string>
          </property>
          <property name="icon">
           <iconset>
            <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
          </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_7">
-         <property name="geometry">
-          <rect>
-           <x>890</x>
-           <y>50</y>
-           <width>111</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
-         </property>
-         <item>
-          <property name="text">
-           <string>iD evenement</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>responsable</string>
-          </property>
-         </item>
         </widget>
         <widget class="QGroupBox" name="groupBox_20">
          <property name="geometry">
@@ -7912,7 +7913,7 @@ QGroupBox::title {
          <property name="title">
           <string>supprimer  événement</string>
          </property>
-         <widget class="QLineEdit" name="lineEdit_45">
+         <widget class="QLineEdit" name="id_event_2">
           <property name="geometry">
            <rect>
             <x>220</x>
@@ -7948,7 +7949,7 @@ QPushButton:hover {
 </string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_147">
+         <widget class="QPushButton" name="supprimer_event">
           <property name="geometry">
            <rect>
             <x>70</x>
@@ -8037,6 +8038,171 @@ url(:/icons/icones/14.png)</string>
             <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
           </property>
          </widget>
+        </widget>
+        <widget class="QLineEdit" name="id_event_3">
+         <property name="geometry">
+          <rect>
+           <x>840</x>
+           <y>60</y>
+           <width>131</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit, QDateTimeEdit {
+    font-family: &quot;Arial&quot;;
+    font-size: 14px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton {
+    font-family: &quot;Arial Black&quot;;
+    font-size: 14px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #1E1E5A;
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="recherche_event">
+         <property name="geometry">
+          <rect>
+           <x>980</x>
+           <y>60</y>
+           <width>31</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit, QDateTimeEdit {
+    font-family: &quot;Arial&quot;;
+    font-size: 12px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton {
+    font-family: &quot;Arial Black&quot;;
+    font-size: 10px;
+    color: white;
+    background-color: #0A0A2A;
+    border: 2px solid #1E1E5A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #1E1E5A;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>OK</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/icones/addition.png</normaloff>:/icons/icones/addition.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pdf">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>10</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+         </property>
+         <property name="text">
+          <string>PDF</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="stat">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>60</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #E8F1FF; /* Couleur de fond initiale */
+    color: #000000; /* Couleur du texte */
+    border: none;
+    font-size: 16px; /* Augmenter la taille du texte */
+    font-weight: bold;
+    padding: 12px; /* Espacement pour agrandir le bouton */
+    border-radius: 8px;
+    text-align: center; /* Centrer le texte */
+    qproperty-iconSize: 32px 32px; /* Agrandir l'icône */
+}
+
+QPushButton:hover {
+    background-color: #D0E3FF; /* Couleur au survol */
+}
+
+QPushButton:pressed {
+    background-color: #1461C7; /* Bleu foncé lorsqu'on clique */
+    color: white;
+}
+url(:/icons/icones/14.png)</string>
+         </property>
+         <property name="text">
+          <string>STAT</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/icones/briefing.png</normaloff>:/icons/icones/briefing.png</iconset>
+         </property>
         </widget>
        </widget>
        <widget class="QWidget" name="tab_2">
@@ -9219,10 +9385,7 @@ QPushButton:hover {
 border-radius: 35px;</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
+       <enum>QFrame::Shape::NoFrame</enum>
       </property>
       <widget class="QPushButton" name="pushButton_iconPromo_6">
        <property name="geometry">
