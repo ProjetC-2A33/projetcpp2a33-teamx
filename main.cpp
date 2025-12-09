@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "authpage.h"
 #include "connection.h"
 
 #include <QApplication>
@@ -6,9 +6,9 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    authpage ap;
     connection c;
     c.createconnect();
-    w.show();
+    ap.exec();
     return a.exec();
 }
